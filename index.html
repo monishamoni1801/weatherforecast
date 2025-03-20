@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Add your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="date-dayname">Monday</h2>
+                <span class="date-day">12 Dec 2024</span>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="location">New York, USA</span>
+            </div>
+            <div class="weather-container">
+                <span class="weather-icon"><i class="fa-solid fa-sun"></i></span>
+                <h1 class="weather-temp">25°C</h1>
+                <h3 class="weather-desc">Sunny</h3>
+            </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="humidity">
+                        <span class="title"><i class="fa-solid fa-droplet"></i> HUMIDITY</span>
+                        <span class="value">50%</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind">
+                        <span class="title"><i class="fa-solid fa-wind"></i> WIND</span>
+                        <span class="value">15 km/h</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-container">
+                <ul class="week-list">
+                    <li>
+                        <span class="day-name">Tue</span>
+                        <span class="day-temp">22°C</span>
+                        <span class="day-icon"><i class="fa-solid fa-cloud"></i></span>
+                    </li>
+                    <li>
+                        <span class="day-name">Wed</span>
+                        <span class="day-temp">24°C</span>
+                        <span class="day-icon"><i class="fa-solid fa-cloud-sun"></i></span>
+                    </li>
+                    <li>
+                        <span class="day-name">Thu</span>
+                        <span class="day-temp">19°C</span>
+                        <span class="day-icon"><i class="fa-solid fa-cloud-showers-heavy"></i></span>
+                    </li>
+                    <li>
+                        <span class="day-name">Fri</span>
+                        <span class="day-temp">18°C</span>
+                        <span class="day-icon"><i class="fa-solid fa-snowflake"></i></span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="location-container">
+                <input class="location-input" type="text" id="city" value="New York">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script> <!-- Add your JS file -->
+</body>
+</html>
